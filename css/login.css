@@ -1,0 +1,150 @@
+:root {
+    --Very-light-pink:  #C7C7C7;
+    --Text-input-field: #F7F7F7;
+    --Hospital-green: #ACD9B2;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.1rem;
+}
+
+header img {
+    width: 15.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin-top: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-style: bold;
+}
+
+/* LOGIN INPUT MAIL AND PASSWORD */
+
+.login-input {
+    margin-top: 1.6rem;
+}
+
+.login-input input[type="text"] {
+    height: 2.5rem;
+    width: 23.4rem;
+    border: none;
+    padding-left: 0.5rem;
+    background-color: var(--Text-input-field);
+    color: var(--Very-light-pink);
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.login-input input[type="password"] {
+    height: 2.5rem;
+    width: 23.4rem;
+    border: none;
+    padding-left: 0.5rem;
+    background-color: var(--Text-input-field);
+    color: var(--Very-light-pink);
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.login-input input::placeholder {
+    color: var(--Very-light-pink);
+}
+
+.login-input p {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+/* LOGIN BUTTON */
+
+.login-button {
+    margin-top: 3.7rem;
+    width: 23.4rem;
+    height: 3.9rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--Hospital-green);
+    border-radius: 0.5rem;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--Text-input-field);
+}
+
+/* FORGOT MY PASSWORD BUTTON */
+
+.forgot_password-ancor {
+    margin-top: 2rem;
+
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--Hospital-green);
+}
+
+.sign_up-button {
+    width: 23.4rem;
+    height: 3.9rem;
+    margin-top: 8.6rem;
+    margin-bottom: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid var(--Hospital-green);
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--Hospital-green);
+}
+
+@media (max-width: 375px)
+{
+
+    .login-input {
+        width: 90%;
+    }
+
+    .login-input input[type="text"], .login-input input[type="password"] {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 375px)
+{
+    .login-button {
+        margin-top: 7.5rem;
+        width: 90%;
+    }
+
+    .sign_up-button {
+        margin-top: 7.5rem;
+        width: 90%;
+    }
+    
+}

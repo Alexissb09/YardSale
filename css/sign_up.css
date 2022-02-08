@@ -1,0 +1,168 @@
+:root {
+    --Very-light-pink:  #C7C7C7;
+    --Text-input-field: #F7F7F7;
+    --Hospital-green: #ACD9B2;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+        background-color: white;
+        width: 100%;
+
+        box-shadow: 0rem 0.25rem 0.5rem 0rem rgb(247, 247, 247);
+        border: none;
+}
+
+.nav--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 3;
+}
+
+.nav-logo img{
+    margin-top: 0.25rem;
+    width: 6.25rem;
+}
+
+.nav-menu-icon img{
+    margin: 0.3rem;
+    margin-left: 0.8rem;
+    width: 1.8rem;   
+}
+
+.nav-shopping-icon img {
+    margin: 0.3rem;
+    margin-right: 0.8rem;
+    width: 2.3rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.title {
+    align-self: baseline;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2.3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.sign-name input[type="text"] {
+    height: 2.5rem;
+    width: 23.4rem;
+    border: none;
+    padding-left: 0.5rem;
+    background-color: var(--Text-input-field);
+    color: var(--Very-light-pink);
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.sign-email input[type="text"] {
+    height: 2.5rem;
+    width: 23.4rem;
+    border: none;
+    padding-left: 0.5rem;
+    background-color: var(--Text-input-field);
+    color: var(--Very-light-pink);
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.sign-password input[type="password"] {
+    height: 2.5rem;
+    width: 23.4rem;
+    border: none;
+    padding-left: 0.5rem;
+    background-color: var(--Text-input-field);
+    color: var(--Very-light-pink);
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.sign-name input::placeholder {
+    color: var(--Very-light-pink);
+}
+.sign-email input::placeholder {
+    color: var(--Very-light-pink);
+}
+.sign-password input::placeholder {
+    color: var(--Very-light-pink);
+}
+
+.sign-name p {
+    padding-top: 1.6rem;
+    font-weight: bold;
+    padding-bottom: 0.6rem;
+}
+.sign-email p {
+    padding-top: 1.6rem;
+    font-weight: bold;
+    padding-bottom: 0.6rem;
+}
+.sign-password p {
+    padding-top: 1.6rem;
+    font-weight: bold;
+    padding-bottom: 0.6rem;
+}
+
+
+.create-account {
+    margin-top: 12.5rem;
+    width: 23.4rem;
+    height: 3.9rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--Hospital-green);
+    border-radius: 0.5rem;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--Text-input-field);
+}
+
+@media (max-width: 375px)
+{
+
+    .sign-name , .sign-email , .sign-password {
+        width: 90%;
+    }
+
+    .sign-name input[type="text"], .sign-email input[type="text"], .sign-password input[type="password"] {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 375px)
+{
+    .create-account {
+        margin-top: 7.5rem;
+        width: 80%;
+    }
+    
+}
